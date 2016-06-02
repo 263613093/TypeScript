@@ -22,13 +22,13 @@
 
      interface SearchServiceOptions {
          complete: (result: baseServiceResult<PoiList> | baseServiceResult<CityList>|baseServiceResult<AreaInfo>) => void;
-         error: () => void;
-         pageIndex: number;
-         pageCapacity: number;
-         location: string;
-         map: qq.maps.Map;
-         panel: string | HTMLDivElement;
-         autoExtend:boolean;
+         error?: () => void;
+         pageIndex?: number;
+         pageCapacity?: number;
+         location?: string;
+         map?: qq.maps.Map;
+         panel?: string | HTMLDivElement;
+         autoExtend?:boolean;
      }
 
 

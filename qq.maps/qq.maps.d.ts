@@ -53,6 +53,8 @@
 
    
     interface MapOptions  {
+        minZoom?: number;
+        maxZoom?: number;
         center?: qq.maps.LatLng;
         zoom?: number;
         noClear?: boolean;
@@ -87,8 +89,8 @@
     }
 
     interface ZoomControlOptions {
-        position: ControlPosition;
-        style:ZoomControlStyle;
+        position?: ControlPosition;
+        style?:ZoomControlStyle;
     }
 
     interface ScaleControlOptions {

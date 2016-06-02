@@ -43,11 +43,13 @@
          /**总路程覆盖的距离，单位米*/
          distance: number;
          /**步行信息*/
-         walks:RouteInfo;
+         walks:RouteInfo[];
      }
 
      interface TransferActionInfo {
+         /**换乘动作类型*/
          type: TransferActionType;
+         /**换乘动作的文字描述说明*/
          instructions: string;
          /**
           * 换乘中的换乘线路、步行中的数据。 
@@ -65,9 +67,13 @@
 
 
      enum TransferPolicy {
+         /**最快捷*/
          LEAST_TIME,
+         /**少换乘*/
          LEAST_TRANSFER,
+         /**少不行*/
          LEAST_WALKING,
+         /**不坐地铁*/
          NO_SUBWAY
      }
 

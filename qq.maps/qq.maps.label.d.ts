@@ -21,14 +21,14 @@
     }
 
     interface LabelOptions {
-        clickable: boolean;
-        content: string;
-        map: qq.maps.Map;
-        offset: qq.maps.Size;
-        position: qq.maps.LatLng;
-        style: any;
-        visible: boolean;
-        zIndex :number;
+        clickable?: boolean;
+        content?: string;
+        map?: qq.maps.Map;
+        offset?: qq.maps.Size;
+        position?: qq.maps.LatLng;
+        style?: any;
+        visible?: boolean;
+        zIndex? :number;
     }
 
 }

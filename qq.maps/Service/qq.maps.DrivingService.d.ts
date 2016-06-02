@@ -1,21 +1,28 @@
 ﻿ declare module qq.maps {
 
      class DrivingService {
+         constructor(options?: DrivingServiceOptions);
 
+         search(start: string | qq.maps.Poi | qq.maps.LatLng, end: string | qq.maps.Poi | qq.maps.LatLng): void;
+         setPolicy(v: DrivingPolicy): void;
+         setLocation(v: string);
+         setComplete(callback: (result: baseServiceResult<DrivingInfo>) => void): void;
+         setError(callback: () => void): void;
+         clear(): void;
      }
 
 
      interface DrivingServiceOptions extends baseServiceOptions<DrivingInfo>{
-         policy: DrivingPolicy;
-         location: string;
+         policy?: DrivingPolicy;
+         location?: string;
          /**
           * 时间，当且仅当policy为PREDICT_TRAFFIC时生效，格式为“day mm:ss”,例如“0 05:30”代表周日5点三十分。
           * day为星期，1—6代表周一至周六，0代表周日。
           * mm:ss为24小时制，预测时间以半小时为间隔。
           * */
-         time: string;
-         map: qq.maps.Map;
-         panel:string|HTMLDivElement;
+         time?: string;
+         map?: qq.maps.Map;
+         panel?:string|HTMLDivElement;
 
      }
 

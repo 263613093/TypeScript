@@ -10,7 +10,7 @@
         getVisible(): boolean;
         getZIndex(): number;
 
-        setMap(map: qq.maps.Map): void;
+        setMap(map: qq.maps.Map | any): void;
         setPath(path: Array<qq.maps.LatLng> | qq.maps.MVCArray<qq.maps.LatLng>): void;
         setStrokeColor(color: qq.maps.Color): void;
         setStrokeWeight(v: number): void;
@@ -20,15 +20,15 @@
     }
 
     interface PolylineOptions {
-        clickable: boolean;
-        cursor: string;
-        editable: boolean;
-        map: qq.maps.Map;
-        path: Array<qq.maps.LatLng>|qq.maps.MVCArray<qq.maps.LatLng>;
-        strokeColor: qq.maps.Color | string;
-        strokeDashStyle: string;
-        strokeWeight: number;
-        visible: boolean;
-        zIndex :number;
+        clickable?: boolean;
+        cursor?: string;
+        editable?: boolean;
+        map?: qq.maps.Map;
+        path?: Array<qq.maps.LatLng>|qq.maps.MVCArray<qq.maps.LatLng>;
+        strokeColor?: qq.maps.Color | string;
+        strokeDashStyle?: string;
+        strokeWeight?: number;
+        visible?: boolean;
+        zIndex ?:number;
     }
 }

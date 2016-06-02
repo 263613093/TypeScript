@@ -1,6 +1,6 @@
 ﻿interface baseServiceOptions<T> {
-    complete: (result: baseServiceResult<T>) => void;
-    error:()=>void;
+    complete?: (result: baseServiceResult<T>) => void;
+    error?:()=>void;
 }
 
 interface baseServiceResult<T> {

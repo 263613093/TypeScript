@@ -24,8 +24,8 @@
     }
 
     interface GeocoderOptions {
-        complete: (result: baseServiceResult<GeoInfo>) => void;
-        error: () => void;
+        complete?: (result: baseServiceResult<GeoInfo>) => void;
+        error?: () => void;
     }
 
     interface GeoInfo {

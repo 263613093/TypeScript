@@ -19,16 +19,16 @@
     }
 
     interface CircleOptions {
-        center: qq.maps.LatLng;
-        clickable: boolean;
-        cursor: string;
-        fillColor: qq.maps.Color | string;
-        map: qq.maps.Map;
-        radius: number;
-        strokeColor: qq.maps.Color | string;
-        strokeDashStyle: string;
-        strokeWeight: number;
-        visible: boolean;
-        zIndex :number;
+        center?: qq.maps.LatLng;
+        clickable?: boolean;
+        cursor?: string;
+        fillColor?: qq.maps.Color | string;
+        map?: qq.maps.Map;
+        radius?: number;
+        strokeColor?: qq.maps.Color | string;
+        strokeDashStyle?: string;
+        strokeWeight?: number;
+        visible?: boolean;
+        zIndex ?:number;
     }
 }

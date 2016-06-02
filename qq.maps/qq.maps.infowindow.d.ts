@@ -19,10 +19,10 @@
      }
 
      interface InfoWindowOptions {
-         map: qq.maps.Map;
-         content: HTMLElement | string;
-         position: qq.maps.LatLng | qq.maps.Marker;
-         zIndex: number;
+         map?: qq.maps.Map;
+         content?: HTMLElement | string;
+         position?: qq.maps.LatLng | qq.maps.Marker;
+         zIndex?: number;
          visible?:boolean;
      }
 }

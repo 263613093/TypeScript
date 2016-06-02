@@ -60,6 +60,11 @@
         equals(other: LatLng): boolean;
     }
 
+    interface MouseEvent {
+        latLng: qq.maps.LatLng;
+        pixel: qq.maps.Point;
+    }
+
     class LatLngBounds {
         constructor(sw:qq.maps.LatLng,ne:qq.maps.LatLng);
         /**
