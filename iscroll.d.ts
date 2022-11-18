@@ -80,8 +80,4 @@ declare module 'iscroll/build/iscroll'{
         },
         snap?:boolean|string;
     }
-    var Xt:{
-        new();
-        new(name:string);
-    }
 }
